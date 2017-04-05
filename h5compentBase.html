@@ -16,12 +16,35 @@
 		 width: 340px;
 		 height:530px;
 		 background-color: #fff;
+	  	 position: absolute;
+		 top: 50%;
+		 left: 50%;
+		 margin: -270px 0 0 -170px;
 	  }
    </style>
+   <script type="text/javascript" src="./JavaScript/H5CompentBase.js"></script>
+   <link rel="stylesheet" type="text/css" href="./CSS/H5CompentBase.css">
+
 </head>
 <body>
    <div class="iPhone">
 	  
    </div>
+   <script type="text/javascript">
+            var config = {
+                type: 'base'
+                
+                bg: './img/p1_people.png ',
+                css: {
+                    left: 50,
+                    top: 50
+                    }
+                center = true
+            }
+
+            var h5 = new H5ComponentBase('myName', config);
+            $('.iPhone').append(h5);
+    </script>
+
 </body>
 </html>
